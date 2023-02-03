@@ -1,7 +1,7 @@
-import SkillRepository from "../../domain/repository/SkillRepository";
-import CreateSkill from "../../domain/useCase/CreateSkill";
-import GetSkills from "../../domain/useCase/GetSkills";
-import { IRequest, IResponse } from "../interface/http";
+import CreateSkill from "../domain/useCases/CreateSkill";
+import GetSkills from "../domain/useCases/GetSkills";
+import { IRequest, IResponse } from "./http";
+import SkillRepository from "../domain/repository/SkillRepository";
 
 
 export default class SkillController {

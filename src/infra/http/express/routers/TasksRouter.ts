@@ -1,5 +1,5 @@
 import express from 'express';
-import SkillController from '../../../../application/controller/SkillController';
+import SkillController from '../../../../controller/SkillController';
 import ExpressAdapter from '../../../adapter/ExpressAdapter';
 import SkillRepositoryMemory from '../../../repository/SkillRepositoryMemory';
 
