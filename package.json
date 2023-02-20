@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start:express": "ts-node src/adapters/express/index.ts",
+    "start:fastify": "ts-node src/adapters/fastify/index.ts",
     "dev:express": "nodemon src/adapters/express/index.ts",
+    "dev:fastify": "nodemon src/adapters/fastify/index.ts",
     "test": "jest"
   },
   "keywords": [],
@@ -21,6 +23,7 @@
     "typecript": "^0.0.1-security"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fastify": "^4.13.0"
   }
 }
