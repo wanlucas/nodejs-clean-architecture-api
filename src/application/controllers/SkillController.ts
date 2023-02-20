@@ -8,7 +8,7 @@ export default class SkillController {
     private _createSkill: CreateSkill
   ) { }
 
-  getSkills = async (_request: Request, handler: Handler): Promise<Response> => {
+  getSkills = async (_req: Request, handler: Handler): Promise<Response> => {
     return handler.status(200).payload(await this._getSkills.execute());
   }
 

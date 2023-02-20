@@ -1,5 +1,5 @@
-import Skill from "../../domain/entity/Skill";
-import SkillRepository from "../../domain/repository/SkillRepository";
+import Skill from "../../domain/entities/Skill";
+import SkillRepository from "../../domain/repositories/SkillRepository";
 
 export default class SkillRepositoryMemory implements SkillRepository {
   public readonly skills = [

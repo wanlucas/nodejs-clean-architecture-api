@@ -1,5 +1,5 @@
-import Skill from "../entity/Skill";
-import SkillRepository from "../repository/SkillRepository";
+import Skill from "../entities/Skill";
+import SkillRepository from "../repositories/SkillRepository";
 
 export default class GetSkills {
   constructor (private readonly _skillRepository: SkillRepository) { }
