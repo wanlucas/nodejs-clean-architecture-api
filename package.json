@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/infra/http/express/server.ts",
-    "dev": "nodemon src/infra/http/express/server.ts",
+    "start:express": "ts-node src/adapters/express/index.ts",
+    "dev:express": "nodemon src/adapters/express/index.ts",
     "test": "jest"
   },
   "keywords": [],

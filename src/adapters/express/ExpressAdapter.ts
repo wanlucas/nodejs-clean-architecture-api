@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { IRequest, IResponse } from '../../controller/http';
+import { IRequest, IResponse } from '../../application/interfaces/http';
 
 export default class ExpressAdapter {
   static create(controller: Function) {
