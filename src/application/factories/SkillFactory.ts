@@ -1,7 +1,7 @@
 import CreateSkill from "../../domain/useCases/CreateSkill";
 import GetSkills from "../../domain/useCases/GetSkills";
 import SkillRepositoryMemory from "../../infra/repository/SkillRepositoryMemory";
-import SkillController from "../controller/SkillController";
+import SkillController from "../controllers/SkillController";
 
 export default class SkillControllerFactory {
   static create(): SkillController {

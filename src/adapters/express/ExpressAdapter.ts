@@ -1,12 +1,15 @@
-import { Request, Response } from 'express';
-import { IRequest, IResponse } from '../../application/interfaces/http';
+import { Request as ExpressRequest, Response as ExpressResponse } from 'express';
+import { Request, Response } from '../../application/interfaces/http';
+import ResponseHandler from '../default/ResponseHandler';
 
 export default class ExpressAdapter {
   static create(controller: Function) {
-    return async (req: Request, res: Response) => {
+    const handler = new ResponseHandler();
+
+    return async (req: ExpressRequest, res: ExpressResponse) => {
       const { body, params, query } = req;
-      const request: IRequest = { body, params, query };  
-      const { status, payload }: IResponse = await controller(request);
+      const request: Request = { body, params, query };  
+      const { status, payload }: Response = await controller(request, handler);
 
       return res.status(status).json(payload);
     };
